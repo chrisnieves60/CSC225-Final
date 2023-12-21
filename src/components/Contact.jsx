@@ -14,7 +14,7 @@ const Contact = () => {
     };
   
     return (
-      <div className="min-h-screen flex justify-center items-center p-4">
+      <div className=" flex justify-center items-center p-4">
         <form className="w-full max-w-lg" onSubmit={handleSubmit}>
           <div className="flex flex-wrap -mx-3 mb-6">
             <div className="w-full px-3 mb-6 md:mb-0">

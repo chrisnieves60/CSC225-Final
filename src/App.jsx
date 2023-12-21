@@ -9,6 +9,8 @@ import Checkout from './components/Checkout';
 import About from './components/About';
 import Contact from './components/Contact'
 import Footer from './components/Footer';
+
+
 function App() {
   const [cart, setCart] = useState([]); 
 
@@ -29,20 +31,23 @@ function App() {
   //the user may add the star to his cart. 
   return (
     <Router>
-      <div className='bg-hero bg-cover min-h-screen w-full '>
+      <div className='flex flex-col bg-hero bg-cover min-h-screen w-full'>
         <Nav />
-        <Routes>
-          <Route path="/" element={<Home/>}/> {/* Removed Outlet and index route seems to be for Home component */}
-          <Route path="/about" element={<About/>}/> 
-          <Route path="/Stars" element={<Stars/>}/>
-          <Route path="/Stars/:id" element={<Star addToCart={addToCart}/>}/>
-          <Route path="/Checkout" element={<Checkout cart={cart}/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-        </Routes>
+        <div className="flex-grow overflow-auto">
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/about" element={<About/>}/> 
+            <Route path="/Stars" element={<Stars/>}/>
+            <Route path="/Stars/:id" element={<Star addToCart={addToCart}/>}/>
+            <Route path="/Checkout" element={<Checkout cart={cart}/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+          </Routes>
+        </div>
         <Footer/>
       </div>
     </Router>
   )
+  
 }
 
 export default App;

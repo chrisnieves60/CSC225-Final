@@ -47,7 +47,7 @@ const [subtotal, setSubtotal] = useState(0);
     )
   }
   return (
-    <div className="min-h-screen py-10 text-white">
+    <div className="py-10 text-white">
       <div className="container mx-auto px-4">
         <h1 className="text-3xl font-bold mb-4">Your Cart:</h1>
         <ul>
@@ -83,6 +83,7 @@ const [subtotal, setSubtotal] = useState(0);
           </div>
           <button type="submit" className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg transition duration-300" onClick={handleSubmit}>Place order</button>
         </form>
+
       </div>
     </div>
   );

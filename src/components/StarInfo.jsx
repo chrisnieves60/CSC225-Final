@@ -15,8 +15,8 @@ const StarInfo = [
         price: 2999.99,
         description: "M31-V1, also known as Andromeda I, is a variable star located in the Andromeda Galaxy (M31), which is the closest spiral galaxy to our Milky Way. This star has captivated astronomers with its unique behavior. It belongs to the category of variable stars, meaning that its brightness fluctuates over time. Andromeda I is estimated to be approximately 10 billion years old, making it one of the older stars in the Andromeda Galaxy. Its age suggests that it formed during the early stages of the universe. This star's variability is of particular interest to astronomers as it provides insights into its internal processes and evolution. As Andromeda I twinkles in the cosmic tapestry of the Andromeda Galaxy, its variable nature serves as a reminder of the dynamic and ever-changing nature of the universe. Observations of stars like Andromeda I help scientists unravel the mysteries of stellar evolution and the history of galaxies.",
         type: "Variable Star",
-        age: "", 
-        distance: "", 
+        age: "2 billion years old", 
+        distance: "2.537 million light-years", 
         imageUrl: star1, 
         
       },
@@ -27,7 +27,7 @@ const StarInfo = [
         description: "Sirius is the brightest star seen from Earth with a visual magnitude of -1.46. It's a binary star, meaning it consists of two stars orbiting each other",
         type: "Binary star",
         age: "200-300 million years", 
-        distance: "8.6 lightyears ", 
+        distance: "8.6 lightyears", 
         imageUrl: star2,
         
       },

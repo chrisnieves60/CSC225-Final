@@ -6,14 +6,15 @@ import StarInfo from './StarInfo';
 const Stars = () => {
   return (
     <div className='text-white'>
-        <div className='flex justify-center'>
-        <h1 className='mt-10'>Please scroll left-right to see more!</h1>
-        </div>
-      <div className="flex justify-start mt-20 space-x-4 overflow-auto p-5">
-    {StarInfo.map((star) => (
-    <div key={star.id} className="max-w-sm bg-white border border-gray-200 bg-orange-500 flex flex-col w-40 h-50 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 ">
+      <div className='flex justify-center'>
+        <h1 className='mt-4 mb-5'>Please scroll up-down to see more!</h1>
+      </div>
+      <div className="flex justify-center">
+        <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 overflow-auto max-h-[80vh] ">
+          {StarInfo.map((star) => (
+            <div key={star.id} className="bg-white border border-gray-200 bg-orange-500 flex flex-col w-70 mb-4 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
       {<div><a href="#">
-        <div className='w-40 h-64 overflow-hidden'>
+        <div className='w-full h-64 overflow-hidden'>
         <img class="rounded-t-lg object-cover w-full h-full" src={star.imageUrl} alt="star" />
         </div>
     </a>
@@ -36,6 +37,7 @@ const Stars = () => {
 
 
 </div>
+    </div>
     </div>
   );
 }
